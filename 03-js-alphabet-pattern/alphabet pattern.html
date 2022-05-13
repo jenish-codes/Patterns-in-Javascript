@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Pattern in Js</title>
+</head>
+<body>
+    <script>
+
+//Capital Alphabet
+// for(let i=65; i<=150; i++){
+//     console.log(String.fromCharCode(i))
+// }
+
+// small letters
+// for(let i=97; i<=122; i++){
+//     console.log(String.fromCharCode(i))
+// }
+
+
+
+
+
+// pattern 1
+
+// let n =5;
+// let string ='';
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<i; j++){
+//         string += String.fromCharCode(j+65)+ ' ';
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+
+
+
+
+
+
+
+// Pattern 2
+
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<i; j++){
+//         string += String.fromCharCode(65+(i-1));
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+
+
+
+
+// Pattern 3 
+
+// let n =5;
+// let string = '';
+// let count = 0;
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<i; j++){
+//         string += String.fromCharCode(65+count);
+//         count += 1
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+
+
+
+
+
+
+
+
+
+
+//pattern 4
+
+// let n=5; 
+// let string = '';
+// for (let i=1; i<=n; i++){
+//     for(let j=0; j<=n-i; j++){
+//         string += String.fromCharCode(j+65);
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+
+
+
+
+
+
+
+//Pattern 5
+
+// let n = 5;
+// let string = '';
+
+// for (let i=1; i<=n; i++){
+//     for(let j=0; j<= n-i; j++){
+//         string += String.fromCharCode((n-j-1)+65);
+//     }
+//     string += '\n';
+// }
+// console.log(string);
+
+
+
+
+
+
+
+
+
+// Pattern 6 
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<n-i+1; j++){
+//         string += String.fromCharCode((n-i-j)+65);
+//     }
+//     string += '\n';
+// }
+// console.log(string)
+
+
+
+
+
+
+
+
+// pyramid Pattern
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<n-i; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*i-1; k++){
+//         string += String.fromCharCode(65+k)
+//     }
+//     string += '\n';
+// }
+// console.log(string)
+
+
+
+
+
+
+
+
+
+
+
+
+// pyramid pattern 2
+
+// let n=5;
+// let string = '';
+// let count = 0;
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<n-i; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*i-1; k++){
+//         string += String.fromCharCode(65+count)
+//         count += 1
+//     }
+//     string += '\n';
+// }
+// console.log(string)
+
+
+
+
+
+
+//Reverse Pyramid
+
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<i; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*(n-i+1)-1; k++){
+//         string += String.fromCharCode(65+k)
+//     }
+//     string += '\n';
+// }
+// console.log(string)
+
+
+
+
+
+// Dimond Pattern 
+
+
+
+
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for(let j=0; j<n-i+1; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*i-1; k++){
+//         string += String.fromCharCode(65+k)
+//     }
+//     string += '\n';
+// }
+
+// for(let i=1; i<=n-1; i++){
+//     for(let j=0; j<i+1; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*(n-i)-1; k++){
+//         string += String.fromCharCode(65+k)
+//     }
+//     string += '\n';
+// }
+// console.log(string)
+
+
+
+
+
+
+
+
+//Hourglass pattern
+
+// let n=5;
+// let string = '';
+
+// for(let i=1; i<=n; i++){
+//     for (let j=1; j<i; j++){
+//         string += ' ';
+//     }
+//     for(let k=0; k<2*(n-i+1)-1; k++){
+//         string += String.fromCharCode(k+65);
+//     }
+//     string += '\n';
+// }
+
+// for(let i=1; i<=n-1; i++){
+//     for(let j=1; j<n-i; j++){
+//         string += ' ';
+//     }
+//     for (let k=0; k<2*(i+1)-1; k++){
+//         string += String.fromCharCode(k+65);
+//     }
+//     string += '\n';
+// }
+
+// console.log(string);
+
+
+
+
+
+
+
+
+
+
+//Pascal Pattern 
+let n=5;
+let string = '';
+
+for(let i=1; i<=n; i++){
+    for(let j=0; j<i; j++){
+        string += String.fromCharCode(j+65);
+    }
+    string +='\n';
+}
+
+for(let i=1; i<=n-1; i++){
+    for(let j=0; j<n-i; j++){
+        string += String.fromCharCode(65+j);
+    }
+    string += '\n';
+}
+
+
+console.log(string);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
